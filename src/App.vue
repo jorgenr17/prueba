@@ -1,28 +1,51 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="full-height">
+    <modal :data="dataModal" />
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import modal from '@/components/modal.vue'
+import eventBus from '@/boot/eventBus'
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+  mounted () {
+    this.initEvents()
+  },
+  data: () => ({
+    dataModal: {}
+  }),
+  methods: {
+    initEvents () {
+      eventBus.$on('modal', data => {
+        console.log(data)
+        this.dataModal = data
+      })
+    }
+  },
+  components: { modal }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+html, body {
+  height: 100%;
 }
+
+.full-height {
+    height: 100%;
+  }
+
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 </style>

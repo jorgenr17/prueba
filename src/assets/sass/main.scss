@@ -1,0 +1,40 @@
+
+$primary: #FDC886;
+$secondary: #F5F2EA;
+$tertiary: #F4F4F4;
+$disabed: rgb(187, 187, 187);
+$black: #000000;
+
+$card-border-width: 0px;
+$card-border-radius: 20px;
+$input-group-addon-bg: white;
+
+$theme-colors: (
+"primary": $primary,
+"secondary": $secondary,
+"tertiary": $tertiary,
+"disabed": $disabed,
+"black": $black
+);
+
+.fs-7 {
+  font-size: 12px;
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.small-button {
+  border-radius: 10px;
+  padding-top: .2rem;
+  padding-bottom: .2rem;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@import 'bootstrap/scss/bootstrap.scss';

@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@test.com",
+      "password": "test1234"
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$54BerFt9PO2IG9NC1MvieuI.UeVPy/PpW2jtTViSCfjPNA4KwBXyu",
+      "id": 2
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "date": "25/01/2022",
+      "description": "una bandeja paisa, dos postres de leche, un jugo de tomate",
+      "price": "123123.50",
+      "location": "Mesa 1",
+      "state": "new"
+    },
+    {
+      "id": 2,
+      "date": "23/01/2022",
+      "description": "Pastel de pollo, jugo de mango",
+      "price": "9812379.0",
+      "location": "Mesa 3",
+      "state": "process"
+    },
+    {
+      "id": 3,
+      "date": "24/01/2022",
+      "description": "Agua de coco, postre de mandarina",
+      "price": "123123.50",
+      "location": "Mesa 5",
+      "state": "process"
+    },
+    {
+      "id": 4,
+      "date": "25/01/2022",
+      "description": "Canelazo  de vino tinto de la reserva 1980",
+      "price": "123123.50",
+      "location": "Mesa 1",
+      "state": "delivery"
+    },
+    {
+      "id": 5,
+      "date": "23/01/2022",
+      "description": "Hamburguesa con doble carne, Perro con todo, y cocacola",
+      "price": "123123.50",
+      "location": "Mesa 3",
+      "state": "delivery"
+    },
+    {
+      "id": 6,
+      "date": "21/01/2022",
+      "description": "Sopa de menudencias y seco sin tajadas, juego de lulo",
+      "price": "123123.50",
+      "location": "Mesa 2",
+      "state": "finish"
+    },
+    {
+      "id": 7,
+      "date": "20/01/2022",
+      "description": "Lentejas a la plancha y sopa de mango",
+      "price": "123123.50",
+      "location": "Mesa 4",
+      "state": "delete"
+    }
+  ]
+}
