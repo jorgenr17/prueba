@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="pt-4 fs-4 pb-4">{{ $route.params.id ? 'Edit Order' : 'New Order' }}</div>
-    <form class="row g-3 needs-validation" novalidate @submit="$route.params.id ? updateOrder($event) : saveOrder($event)">
+    <form class="row g-3 needs-validation" id="orderForm" novalidate @submit="$route.params.id ? updateOrder($event) : saveOrder($event)">
       <div class="row">
         <div class="col-sm-12 col-md-4 col-xl-4">
           <input type="number" class="form-control" placeholder="Order id" v-model="order.id" required>
@@ -38,8 +38,8 @@
       <div class="row justify-content-end mt-4">
         <div class="col-3">
           <div class="d-grid gap-2">
-            <button v-if="$route.params.id" type="submit" class="btn btn-primary">Actualizar</button>
-            <button v-else type="submit" class="btn btn-primary">Guardar</button>
+            <button v-if="$route.params.id" type="submit" class="btn btn-primary actualizar">Actualizar</button>
+            <button v-else type="submit" class="btn btn-primary guardar">Guardar</button>
           </div>
         </div>
       </div>

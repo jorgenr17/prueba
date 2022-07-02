@@ -15,7 +15,7 @@
             <div class="container">
               <h5 class="card-title fw-bold text-center fs-3 mt-4">Agent Login</h5>
               <p class="card-text text-center fs-6 mb-4 mt-2">Hey, Enter your to get sign in to your account</p>
-              <form class="row g-3 needs-validation" novalidate @submit="login($event)">
+              <form class="row g-3 needs-validation" id="loginForm" novalidate @submit="login($event)">
                 <div class="input-group mb-3">
                   <input
                     type="email"
