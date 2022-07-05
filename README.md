@@ -4,12 +4,16 @@
 
 ```
 yarn install
+# or
+npm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
 yarn dev
+# or
+npm run dev
 ```
 
 ### Setting up json-server and json-server-auth
