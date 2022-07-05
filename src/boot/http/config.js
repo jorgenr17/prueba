@@ -36,13 +36,7 @@ instance.interceptors.response.use(
   },
   error => {
     if (error.response.status) {
-      // localStorage.removeItem('accessToken')
-      // store.commit('setToken', null)
-      // store.commit('setUserData', {})
-      // store.commit('setTerceros', [])
-      // store.commit('setEstablecimientosComercio', [])
-      // router.push('/login')
-      console.log('no autorizado')
+      console.log('no autorizado', error.response)
     }
     return Promise.reject(error)
   }

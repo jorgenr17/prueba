@@ -1,24 +1,25 @@
 # prueba
 
 ## Project setup
+
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-yarn serve
+yarn dev
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### Setting up json-server and json-server-auth
 
-### Lints and fixes files
+with json-server and json-server-auth installed globally
+
 ```
-yarn lint
+json-server-auth ./src/db/db.json
 ```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).

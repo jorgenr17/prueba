@@ -91,8 +91,6 @@ export default {
       event.stopPropagation()
       if (this.validateForm()) {
         let { email, password } = this.usuario
-        email = email.trim()
-        password = password.trim()
         POST({
           url: 'login',
           data: { email, password }
