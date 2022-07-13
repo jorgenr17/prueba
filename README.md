@@ -18,6 +18,14 @@ npm run dev
 
 ### Setting up json-server and json-server-auth
 
+Install globally json-server and json-server-auth
+
+```
+yarn add -g json-server json-server-auth
+# or
+npm install -g json-server json-server-auth
+```
+
 with json-server and json-server-auth installed globally
 
 ```
