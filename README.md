@@ -1,6 +1,8 @@
-# prueba
+# Prueba
 
-## Project setup
+## Inicialización del proyecto
+
+Instalacón de dependencias del proyecto
 
 ```
 yarn install
@@ -8,17 +10,9 @@ yarn install
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Instalando dependencias globales
 
-```
-yarn dev
-# or
-npm run dev
-```
-
-### Setting up json-server and json-server-auth
-
-Install globally json-server and json-server-auth
+Instalar json-server y json-server-auth de forma global en nuestro equipo
 
 ```
 yarn add -g json-server json-server-auth
@@ -26,12 +20,20 @@ yarn add -g json-server json-server-auth
 npm install -g json-server json-server-auth
 ```
 
-with json-server and json-server-auth installed globally
+Con json-server y json-server-auth instalados de manera global ejecutamos la siguiente linea
 
 ```
 json-server-auth ./src/db/db.json
 ```
 
-### Customize configuration
+### Iniciando aplicación en modo desarrollo
 
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Para ejecutar nuestra aplicación de forma local ejecute uno de los dos siguientes comandos
+
+```
+yarn dev
+# or
+npm run dev
+```
+
+Luego vaya a [http://localhost:8080](http://localhost:8080)
